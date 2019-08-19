@@ -97,7 +97,9 @@ header li a:hover {
 	margin-right: auto;
 	font-size: 1.4rem;
 	margin-top: 10rem;
-	border-radius: 1rem;
+	border-radius: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	border: 1px solid black;
 }
 #Showcase .learn-more:hover {
@@ -112,10 +114,11 @@ header li a:hover {
 }
 #About p {
 	padding-bottom: 1rem;
+	color: #212529;
 }
 #About .Person .image {
 	width: 18rem;
-	height: 18rem;
+	height: 22rem;
 	border-radius: 9rem;
 	overflow: hidden;
 	float: left;
