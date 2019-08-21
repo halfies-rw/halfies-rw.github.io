@@ -23,11 +23,15 @@ p, q {
 	margin: 0;
 }
 .secTitle {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	text-align: center;
+	color: orange;
 	padding-bottom: 2rem;
 	text-transform: uppercase;
+}
+.orge {
+	color: orange;
 }
 
 /*Header*/
@@ -115,20 +119,22 @@ header li a:hover {
 }
 #About p, q {
 	padding-bottom: 1rem;
-	/*color: #212529;*/
-	/*font-size: 1rem;*/
 }
-#About .Person .image {
-	width: 18rem;
+#About .Person .image  {
+	width: 40%;
+	float: left;
+}
+#About .Person .image .imgg {
+	width: 17rem;
 	height: 22rem;
 	border-radius: 9rem;
 	overflow: hidden;
-	float: left;
-	/*margin-left: 5%;*/
+	float: right;
 }
 #About .Person img {
 	width: 100%;
 	height: 100%;
+
 }
 #About .Person .text {
 	width: 50%;
@@ -159,7 +165,7 @@ header li a:hover {
 }
 #Services h1 {
 	line-height: 1.5;
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	padding: .5rem;
 	box-sizing: border-box;
 	font-weight: 300;
@@ -215,12 +221,14 @@ footer .contact-info {
 footer .contact-info div {
 	padding-bottom: 1rem;
 }
-footer #lastwords {
+/*footer #lastwords {
 	padding-bottom: 2rem;
-}
+}*/
 footer a:hover {
 	border-bottom: 3px solid;
 }
+
+
 /*On Small Device*/
 @media(max-width: 768px){
 	/*Global*/
@@ -228,7 +236,7 @@ footer a:hover {
 		width: 90%;
 	}
 	.secTitle {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 
 	/*Header*/
@@ -260,7 +268,7 @@ footer a:hover {
 		/*padding-top: 8rem;*/
 	}
 	#Showcase h1 {
-		font-size: 2.2rem;
+		font-size: 1.5rem;
 	}
 	#Showcase .learn-more {
 		width: 80%;
@@ -270,9 +278,14 @@ footer a:hover {
 	#About {
 		padding-top: 5rem;
 	}
+	#About .Person .image .imgg {
+		float: none;
+		margin: auto;
+	}
 	#About .Person .image {
 		float: none;
 		margin: auto;
+		width: 100%;
 	}
 	#About .Person .text {
 		float: none;
