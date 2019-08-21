@@ -3,6 +3,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	margin: 0 auto;
 	padding: 0;
+	line-height: 1.5rem;
 }
 .container	{
 	width: 80%;
@@ -18,7 +19,7 @@ h1, h3, ul {
 	padding: 0;
 }
 p, q {
-	font-size: 1.125rem;
+	font-size: 1rem;
 	margin: 0;
 }
 .secTitle {
@@ -78,7 +79,7 @@ header li a:hover {
 #Showcase {
 	color: #fff;
 	text-align: center;
-	padding-top: 15rem;
+	padding-top: 10rem;
 	padding-bottom: 6rem;
 	background: url(../img/bg.jpg);
     background-size: cover;
@@ -88,7 +89,7 @@ header li a:hover {
 #Showcase h1 {
 	font-size: 3rem;
 	font-weight: bold;
-	/*line-height: 1.2;*/
+	line-height: 3rem;
 }
 #Showcase .learn-more {
 	cursor: pointer;
@@ -112,9 +113,10 @@ header li a:hover {
 	padding-top: 4rem;
 	padding-bottom: 2rem;
 }
-#About p {
+#About p, q {
 	padding-bottom: 1rem;
-	color: #212529;
+	/*color: #212529;*/
+	/*font-size: 1rem;*/
 }
 #About .Person .image {
 	width: 18rem;
@@ -132,7 +134,9 @@ header li a:hover {
 	width: 50%;
 	float: right;
 	padding-top: 2rem;
-	/*margin-right: 5%;*/
+}
+#About .Person .text h1 {
+	margin-top: 2rem;
 }
 
 /*Services Section*/
