@@ -246,13 +246,13 @@ footer a:hover {
     opacity: 1;
   }
   #Showcase {
-    padding: 8rem 0;
+    padding: 10rem 0;
   }
   #Showcase h1 {
     font-size: 1.5rem;
   }
   #About {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
   #About .Person .image .imgg {
     float: none;
