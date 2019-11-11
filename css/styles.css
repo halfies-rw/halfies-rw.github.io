@@ -11,6 +11,7 @@
 h1,
 h2,
 p,
+q,
 ul,
 li {
   margin: 0;
@@ -98,8 +99,7 @@ header .menu-icon div {
 /* Showcase */
 #Showcase {
   text-align: center;
-  padding-top: 15rem;
-  padding-bottom: 10rem;
+  padding: 12rem 0;
   background: url(../img/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -244,6 +244,9 @@ footer a:hover {
   header .nav-active {
     visibility: visible;
     opacity: 1;
+  }
+  #Showcase {
+    padding: 8rem 0;
   }
   #Showcase h1 {
     font-size: 1.5rem;
