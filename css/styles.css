@@ -1,5 +1,13 @@
-/*Globals*/
 /* Globals */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf)
+      format("truetype");
+}
 h1,
 h2,
 p,
@@ -49,12 +57,10 @@ header {
   display: flex;
   width: 100%;
   height: 10vh;
-  /* color: black; */
   align-items: center;
   justify-content: space-around;
   background-color: white;
   box-shadow: 10px 10px 5px grey;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -89,7 +95,7 @@ header .menu-icon div {
   background-color: black;
 }
 
-/* Showcase Section*/
+/* Showcase */
 #Showcase {
   text-align: center;
   padding-top: 15rem;
@@ -105,7 +111,7 @@ header .menu-icon div {
   line-height: 3rem;
 }
 
-/*About Section*/
+/* About */
 #About {
   padding-top: 4rem;
   padding-bottom: 2rem;
@@ -137,8 +143,7 @@ q {
 #About .Person .text h1 {
   margin-top: 2rem;
 }
-
-/*Services Section*/
+/* Services */
 #Services {
   padding-top: 4rem;
   text-align: center;
@@ -162,7 +167,6 @@ q {
   font-weight: 300;
 }
 #Services p {
-  /*font-size: 1.25rem;*/
   width: 100%;
   overflow: hidden;
 }
@@ -176,15 +180,13 @@ q {
   width: 100%;
   height: 100%;
 }
-
-/*Clients Section*/
+/* Clients */
 #Clients {
   padding-top: 4rem;
   padding-bottom: 2rem;
   text-align: center;
 }
 #Clients .clients div {
-  /*width: 25%;*/
   width: 10rem;
   margin: 2%;
   padding: 1rem;
@@ -195,13 +197,11 @@ q {
   width: 100%;
   height: 100%;
 }
-
-/*Footer with Contact*/
+/* Footer */
 footer {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  /* color: #fff; */
   background-color: #f8f9fa;
 }
 footer .contact-info {
@@ -210,28 +210,18 @@ footer .contact-info {
 footer .contact-info div {
   padding-bottom: 1rem;
 }
-/*footer #lastwords {
-	padding-bottom: 2rem;
-}*/
 footer a:hover {
   border-bottom: 3px solid;
 }
 
-/* On Tablet Screen */
-@media screen and (max-width: 1024px) {
-}
-
-/*On Mobile screen*/
-@media (max-width: 768px) {
-  /*Global*/
+/* On Mobile Screen */
+@media screen and (max-width: 768px) {
   .container {
     width: 90%;
   }
   .secTitle {
     font-size: 1.2rem;
   }
-
-  /* Header */
   header .menu-icon {
     display: block;
   }
@@ -244,7 +234,6 @@ footer a:hover {
     width: 100%;
     top: 10vh;
     left: 0;
-    background-color: red;
     background-color: #f8f9fa;
     box-shadow: 10px 10px 5px grey;
     border-top: 1px solid grey;
@@ -259,7 +248,6 @@ footer a:hover {
   #Showcase h1 {
     font-size: 1.5rem;
   }
-  /*About*/
   #About {
     padding-top: 5rem;
   }
@@ -278,8 +266,6 @@ footer a:hover {
     text-align: center;
     margin: auto;
   }
-
-  /*Services*/
   #Services {
     padding-top: 5rem;
   }
@@ -288,8 +274,6 @@ footer a:hover {
     width: 90%;
     margin: 0 auto;
   }
-
-  /* Clients */
   #Clients {
     padding-top: 5rem;
   }
