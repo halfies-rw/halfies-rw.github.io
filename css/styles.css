@@ -254,6 +254,9 @@ footer a:hover {
   #About {
     padding-top: 2rem;
   }
+  .secTitle {
+    padding-bottom: 1rem;
+  }
   #About .Person .image .imgg {
     float: none;
     margin: auto;
