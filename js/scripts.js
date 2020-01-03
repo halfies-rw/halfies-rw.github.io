@@ -14,14 +14,14 @@ function DomReady(Ready) {
 DomReady(function() {
   // Add Event listener to toggle menu in small screen
   let menu_icon = document.querySelector(".menu-icon");
-  menu_icon.addEventListener("click", MenuHandler);
+  menu_icon.addEventListener("click", e => {
+    document.querySelector("header .nav-links").classList.toggle("nav-active");
+    e.stopPropagation();
+  });
 
   // Close menu item if open and window is clicked
-  window.addEventListener("click", e => {
-    if (e.target.className !== "menu-icon" && e.target.className != "miconic") {
-      let nav = document.querySelector("header .nav-links");
-      nav.classList.remove("nav-active");
-    }
+  document.addEventListener("click", e => {
+    document.querySelector("header .nav-links").classList.remove("nav-active");
   });
 
   // Scroll Navs to Sections
@@ -53,11 +53,40 @@ DomReady(function() {
     });
     bTag.preventDefault();
   });
-});
 
-// Hide menu on small devices
-// Toggle menu
-function MenuHandler() {
-  let nav = document.querySelector("header .nav-links");
-  nav.classList.toggle("nav-active");
-}
+  // Track scroll positions
+  window.addEventListener("scroll", () => {
+    let pos = window.scrollY;
+    let about = document.getElementById("About").offsetTop - 40;
+    let service = document.getElementById("Services").offsetTop - 40;
+    let client = document.getElementById("Clients").offsetTop - 40;
+    let foot = document.querySelector("footer").offsetTop - 40;
+
+    // console.log(foot);
+
+    if (pos >= about && pos < service) {
+      setActiveNav("about");
+    } else if (pos >= service && pos < client) {
+      setActiveNav("services");
+    } else if (pos >= client && pos < foot) {
+      setActiveNav("clients");
+    } else if (pos >= foot) {
+      setActiveNav("contact");
+    } else {
+      setActiveNav("none");
+    }
+  });
+
+  // Sets the active class to Navigation
+  let prev = "about";
+  function setActiveNav(nav) {
+    // console.log(nav);
+    let prev_nav = document.querySelector(".nav-links ." + prev);
+    if (prev_nav !== undefined && prev_nav != null)
+      prev_nav.classList.remove("active");
+    prev = nav;
+    let curr = document.querySelector(".nav-links ." + nav);
+
+    if (curr !== undefined && curr != null) curr.classList.add("active");
+  }
+});
